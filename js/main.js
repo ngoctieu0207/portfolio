@@ -35,6 +35,9 @@
   // Hash routing
   const show = () => {
     let route = location.hash.replace(/^#/, '') || 'home';
+    // old category links still land on the right page
+    const aliases = { 'work/painting': 'work/design', 'work/sound': 'work/video', 'work/photo': 'work/video' };
+    if (aliases[route]) { history.replaceState(null, '', `#${aliases[route]}`); route = aliases[route]; }
     if (!pages.some((p) => p.dataset.page === route)) route = 'home';
     const section = route.split('/')[0];
 
