@@ -439,11 +439,11 @@ a { color: inherit; }
 .project__hero { width: 100%; border-radius: 10px; }
 .project__text {
   max-width: 72ch;
-  margin: 22px 0 0;
+  margin: 22px auto 0;
   font-size: clamp(16px, 1.4vw, 18px);
   line-height: 1.65;
   color: #7a2346;
-  text-align: left;
+  text-align: center;
 }
 .project > * + .gallery, .project > * + .project__video, .project > * + .project__hero { margin-top: 18px; }
 .project__video {
@@ -454,7 +454,9 @@ a { color: inherit; }
   margin: 0;
   box-shadow: 0 10px 30px rgba(144, 16, 53, .18);
 }
-.credits { margin: 16px 0 0; font-size: 14px; opacity: .8; }
+.credits { margin: 16px auto 0; font-size: 14px; opacity: .8; text-align: center; }
+.project__kicker, .project__title { text-align: center; }
+.project--split > div { text-align: center; }
 
 /* footer: email always within reach */
 .site-footer {
@@ -476,7 +478,7 @@ a { color: inherit; }
   align-items: center;
 }
 .project--split .project__title { padding-right: 0; }
-.project--split .project__text { margin: 0 0 20px; }
+.project--split .project__text { margin: 0 auto 20px; }
 
 .gallery { display: grid; gap: 0; margin: 0 -4px; }
 .gallery--3 { grid-template-columns: repeat(3, 1fr); }
