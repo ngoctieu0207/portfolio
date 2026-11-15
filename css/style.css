@@ -602,8 +602,8 @@ a { color: inherit; }
 @media (min-width: 961px) {
   .site {
     container-type: inline-size;
-    width: min(75.5vw, (100vh - 190px) * 1.745, 100% - 2 * var(--gutter));
-    padding-top: 24px;
+    width: min((100vh - 130px) * 1.745, 100% - 2 * var(--gutter));
+    padding: 24px 0 16px;
   }
   .tab { font-size: 1.6cqw; padding: .55cqw 2cqw .45cqw; border-radius: 1.6cqw 1.6cqw 0 0; margin-top: 1cqw; }
   .tab.is-active, .tab:hover { margin-top: 0; padding-top: 1.1cqw; padding-bottom: .6cqw; }
@@ -635,7 +635,7 @@ a { color: inherit; }
   .about-photo  { left: 4.7%; top: 7.8%; width: 24.7%; }
   .about-photo__name { font-size: 2.4cqw; }
   .about-intro  { left: 30.5%; top: 8.2%; width: 40%; }
-  .about-intro__title { font-size: 4cqw; margin: 0 0 .8cqw; }
+  .about-intro__title { font-size: 4cqw; margin: 0 0 .3cqw; }
   .card--software { left: 74.1%; top: 24.7%; width: 22.9%; }
   .card--edu      { left: 4.5%;  top: 63.4%; width: 22.5%; }
   .card--skills   { left: 35.2%; top: 47.9%; width: 33.3%; height: 42.4%; overflow: visible; }
@@ -645,7 +645,11 @@ a { color: inherit; }
   .card__bar i { width: .6cqw; height: .6cqw; }
   .card__bar span { font-size: 1.4cqw; margin-left: .4cqw; }
   .card__body { font-size: 1.12cqw; padding: .9cqw 1.2cqw 1.1cqw; line-height: 1.55; }
-  .card--intro .card__body { font-size: 1.05cqw; line-height: 1.6; }
+  .card--intro { border-radius: 1cqw; }
+  .card--intro .card__bar { display: none; }
+  .card--intro .card__body { font-size: 1cqw; line-height: 1.65; text-align: justify; padding: .8cqw 1cqw; }
+  .about-intro__title { position: relative; }
+  .title-sun { position: absolute; left: 98%; top: -.3cqw; width: 4cqw; margin: 0; }
   .list li + li { margin-top: .5cqw; }
   .list strong { font-size: 1.6cqw; }
   .list small { font-size: 1.1cqw; }
