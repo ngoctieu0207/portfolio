@@ -1,0 +1,8 @@
+# Not part of the website
+.claude/
+originals/
+pic/
+*.pdf
+ASSETS-CAN-BO.md
+desktop.ini
+Thumbs.db
